@@ -16,10 +16,25 @@
 } */
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    /* --bg-color: #1e2c39;
+    --second-bg-color: #324151;
     --text-color: #fff;
-    --main-color: #0ef;
+    --second-text-color: #9599a2;
+    --main-color: #fe1a27; */
+
+    /* Otra paleta */
+    --bg-color: #191E29;
+    --second-bg-color: #132D46;
+    --text-color: #fff;
+    --second-text-color: #696E79;
+    --main-color: #01C38D;
+
+    /* Otra paleta */
+    /* --bg-color: #2d3250;
+    --second-bg-color: #424769;
+    --text-color: #ffffff;
+    --second-text-color: #676f9d;
+    --main-color: #f9b17a; */
 }
 
 html {
@@ -52,14 +67,26 @@ section {
 }
 
 .header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    border-bottom: .2rem solid rgba(0, 0, 0, .2);
 }
 
 .logo {
-    font-size: 2.5rem;
     color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.logo img:hover {
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .navbar a {
@@ -88,6 +115,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .home-content {
@@ -95,7 +123,7 @@ section {
 }
 
 .home-img {
-    width: 35vw;
+    /* width: 35vw; */
     animation: floatImage 4s ease-in-out infinite;
     -webkit-animation: floatImage 4s ease-in-out infinite;
 }
@@ -184,7 +212,7 @@ span {
 
 .social-media a:hover {
     background-color: var(--main-color);
-    color: var(--second-bg-color);
+    color: var(--text-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -199,7 +227,7 @@ span {
     -o-border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
-    color: var(--second-bg-color);
+    color: var(--text-color);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
@@ -486,7 +514,7 @@ span {
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--second-bg-color);
+    color: var(--text-color);
 }
 
 
