@@ -40,7 +40,6 @@ window.onscroll = () => {
 };
 
 
-
 // -------- Scroll reveal -----
 ScrollReveal({ 
     // reset: true,

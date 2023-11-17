@@ -459,6 +459,12 @@ span {
     resize: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
 .contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
