@@ -181,23 +181,57 @@
     </section>
 
     <!-- contact section design -->
-    <section class="contact" id="contact">
+    <section class="contact">
         <h2 class="heading">Contacta <span>conmigo!</span></h2>
 
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Nombre completo *" required>
-                <input type="email" placeholder="Correo (ej:mkt@empresa.com) *" required>
+                <div class="input-field field">
+                    <input type="text" placeholder="Nombre completo *" id="name" autocomplete="off" class="item">
+                    <div class="error-txt">El nombre no puede estar en blanco</div>
+                </div>
+                <div class="input-field field">
+                    <input type="email" placeholder="Correo (ej:mkt@empresa.com) *" id="email" autocomplete="off" class="item">
+                    <div class="error-txt email">El correo no puede estar en blanco</div>
+                </div>
             </div>
+
             <div class="input-box">
-                <input type="number" placeholder="Teléfono *" required>
-                <input type="text" placeholder="Asunto *" required>
+                <div class="input-field field">
+                    <input type="number" placeholder="Teléfono *" id="phone" autocomplete="off" class="item">
+                    <div class="error-txt">El teléfono no puede estar en blanco</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Asunto *" id="subject" autocomplete="off" class="item">
+                    <div class="error-txt">El asunto no puede estar en blanco</div>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje *" required></textarea>
-            <input type="submit" value="Enviar" class="btn">
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Tu mensaje *" autocomplete="off" class="item" ></textarea>
+                <div class="error-txt">El mensaje no puede estar en blanco</div>
+            </div>
+            <input type="submit" value="Enviar mensaje" class="btn" id="btnSend">
         </form>
     </section>
 
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contacta <span>conmigo!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nombre completo *" id="name" autocomplete="off" required>
+                <input type="email" placeholder="Correo (ej:mkt@empresa.com) *" id="email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Teléfono *" id="phone" autocomplete="off" required>
+                <input type="text" placeholder="Asunto *" id="subject" autocomplete="off" required>
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Tu mensaje *"  autocomplete="off" required></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn" id="btnSend">
+        </form>
+    </section> -->
+    
     <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
@@ -217,6 +251,11 @@
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+    <!-- smtp js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- custom js -->
     <script src="./assets/js/app.js"></script>
