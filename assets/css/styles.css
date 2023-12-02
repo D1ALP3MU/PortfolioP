@@ -148,9 +148,31 @@ section {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    box-shadow: 0 0 2rem var(--main-color);
-    border: 2px solid var(--main-color);
+    /* box-shadow: 0 0 2rem var(--main-color); */
+    border: 3px solid var(--main-color);
 }
+
+/* .home-img::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid var(--main-color);
+    border-right: 10px solid var(--main-color);
+    right: -20px;
+    bottom: -20px;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid var(--main-color);
+    border-left: 10px solid var(--main-color);
+    left: -20px;
+    top: -20px;
+} */
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -252,15 +274,8 @@ span {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    box-shadow: 0 0 2rem var(--main-color);
-    border: 2px solid var(--main-color);
-}
-
-.row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    /* box-shadow: 0 0 2rem var(--main-color); */
+    border: 3px solid var(--main-color);
 }
 
 .about .education,
@@ -268,8 +283,6 @@ span {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
-    /* background-color: #191E29; */
-    /* border: 2px solid var(--main-color); */
 }
 
 .about .row h3.title {
@@ -279,9 +292,9 @@ span {
     color: var(--text-color);
 }
 
-.about .row .timeline-box {
-    flex: 0 0 100%;
-    max-width: 100%;
+.content-exp-edu {
+    display: flex;
+    gap: 20px;
 }
 
 .shadow-dark {
@@ -291,7 +304,6 @@ span {
 .about .row .timeline {
     background-color: var(--bg-color);
     padding: 30px 15px;
-    /* border: 1px solid var(--main-color); */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -789,6 +801,19 @@ input[type=number]::-webkit-outer-spin-button {
     .about img {
         width: 70vw;
         margin-top: 4rem;
+    }
+
+    
+    .content-exp-edu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .about .education,
+    .about .experience {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .services h2 {
