@@ -4,10 +4,27 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.addEventListener('click', addIconToggle);
 
+// ---------- button Read More section about -------- 
+const btnReadMore = document.querySelector('#btnReadMore');
+
+btnReadMore.addEventListener('click', showEducationAndExperience);
+
 // FUNCTIONS
 function addIconToggle() {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+}
+
+function showEducationAndExperience() {
+    const sectionEducationExperience = document.querySelector('#container-edu-exp');
+    
+    if(sectionEducationExperience.style.display === 'block') {
+        sectionEducationExperience.style.display = 'none';
+        btnReadMore.textContent = 'Ver más';
+    } else {
+        sectionEducationExperience.style.display = 'block'
+        btnReadMore.textContent = 'Ver menos';
+    }
 }
 
 // -------- Scroll sections active link -----
@@ -39,7 +56,6 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-
 // -------- Scroll reveal -----
 ScrollReveal({ 
     // reset: true,
@@ -52,7 +68,6 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
-
 
 // -------- typed js -----
 const typed = new Typed('.multiple-text', {

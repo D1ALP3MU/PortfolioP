@@ -278,6 +278,10 @@ span {
     border: 3px solid var(--main-color);
 }
 
+#container-edu-exp {
+    display: none;
+}
+
 .about .education,
 .about .experience {
     flex: 0 0 50%;
@@ -707,13 +711,42 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* BREAKPOINTS */
-@media (max-width: 1200) {
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
 
-@media (max-width: 991) {
+@media (max-width: 1000px) {
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -746,33 +779,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
     .home {
         flex-direction: column;
     }
